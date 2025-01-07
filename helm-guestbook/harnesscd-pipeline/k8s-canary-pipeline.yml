@@ -54,12 +54,12 @@ pipeline:
                         spec:
                           skipDryRun: false
             rollbackSteps:
-              - step:
-                  name: Canary Delete
-                  identifier: rollbackCanaryDelete
-                  type: K8sCanaryDelete
-                  timeout: 10m
-                  spec: {}
+              # - step:
+              #     name: Canary Delete
+              #     identifier: rollbackCanaryDelete
+              #     type: K8sCanaryDelete
+              #     timeout: 10m
+              #     spec: {}
               - step:
                   name: Rolling Rollback
                   identifier: rollingRollback
